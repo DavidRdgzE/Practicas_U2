@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DA_EVA_3_PRACTICA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9pm-0v-UZf">
+                                <rect key="frame" x="20" y="50" width="560" height="450"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="micelda" rowHeight="81" id="R3v-SD-sGT" customClass="TableViewCellMia" customModule="_DA_EVA_3_PRACTICA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R3v-SD-sGT" id="B4h-Q3-1aZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="25W-XV-2dl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vsY-6Z-vJ4"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ASIGNATURAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weQ-G2-Vye">
+                                <rect key="frame" x="20" y="28" width="125" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6E-yC-D2x">
+                                <rect key="frame" x="445" y="554" width="135" height="26"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h2Y-Ex-kC9">
+                                <rect key="frame" x="268" y="516" width="64" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="6sj-Ed-Yja"/>
+                                    <constraint firstAttribute="width" constant="64" id="Gzg-Vp-LVQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="i6E-yC-D2x" secondAttribute="trailing" id="5A5-PR-FH1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i6E-yC-D2x" secondAttribute="bottom" constant="20" id="6N8-wa-Esr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="weQ-G2-Vye" secondAttribute="leading" id="6iI-SI-HKe"/>
+                            <constraint firstItem="9pm-0v-UZf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dp9-d1-gCp"/>
+                            <constraint firstItem="9pm-0v-UZf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="PsI-zA-Uer"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9pm-0v-UZf" secondAttribute="bottom" constant="100" id="REn-I0-zMQ"/>
+                            <constraint firstItem="weQ-G2-Vye" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="isD-1r-t2A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9pm-0v-UZf" secondAttribute="trailing" id="qkI-57-Kkg"/>
+                            <constraint firstItem="h2Y-Ex-kC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xe2-hb-sS2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h2Y-Ex-kC9" secondAttribute="bottom" constant="20" id="y2q-zU-6bh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgBottom" destination="h2Y-Ex-kC9" id="3af-kl-lfm"/>
+                        <outlet property="lblArea" destination="i6E-yC-D2x" id="7GW-wO-DVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="429"/>
+        </scene>
+    </scenes>
+</document>
